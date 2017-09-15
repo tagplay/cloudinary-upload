@@ -1,0 +1,25 @@
+{
+  "name": "@tagplay/cloudinary-upload",
+  "version": "0.0.0",
+  "description": "Uploads assets to Cloudinary",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tagplay/cloudinary-upload.git"
+  },
+  "author": "Fannar Snær <fannar@lambagras.is>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tagplay/cloudinary-upload/issues"
+  },
+  "homepage": "https://github.com/tagplay/cloudinary-upload#readme",
+  "dependencies": {
+    "@tagplay/cloudinary-signature": "^1.0.0",
+    "form-data": "^2.3.1",
+    "prefect-worker-config": "*",
+    "wreck": "^10.0.0"
+  }
+}
