@@ -46,8 +46,9 @@ function upload(file, options, cb) {
       payload: form
     },
     function(err, res, payload) {
-      if (err) log.debug({ err: err }, 'Problem requesting');
       if (payload) payload = JSON.parse(payload);
+      if (payload && payload.error) err = payload.error;
+      if (err) log.debug({ err: err }, 'Problem requesting');
       cb(err, payload);
     }
   );
